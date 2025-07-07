@@ -48,7 +48,7 @@ Check out the live demo here:
 
 ## Credits
 
-Created by [Your Name](https://github.com/saikat-codes).
+Created by [Saikat Das](https://github.com/saikat-codes).
 
 ---
 
