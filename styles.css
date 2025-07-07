@@ -24,7 +24,7 @@ body {
 
 @media (max-width: 600px) {
     #navbar {
-        width: 60vw;    
+        width: 75vw;    
         height: 100%;       
         position: fixed; 
         top: 0;
