@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav id="navbar">
+        <header class="nav-head">HTML  Documentation</header>
+        <ul class="nav-li">
+            <li>
+                <a href="#introduction" class="nav-link">Introduction</a>
+            </li>
+             <li>
+                <a href="#basic_structure" class="nav-link">Basic Structure</a>
+            </li>
+             <li>
+                <a href="#Headings_and_Paragraphs" class="nav-link">Headings and Paragraphs</a>
+            </li>
+             <li>
+                <a href="#Links_and_Anchor_Tags" class="nav-link">Links and Anchor Tags</a>
+            </li>
+             <li>
+                <a href="#Images" class="nav-link">Images</a>
+            </li>
+             <li>
+                <a href="#Lists" class="nav-link">Lists</a>
+            </li>
+             <li>
+                <a href="#Elements_and_Attributes" class="nav-link">Elements and Attributes</a>
+            </li>
+             <li>
+                <a href="#Divs_and_Spans" class="nav-link">Divs and Spans</a>
+            </li>
+             <li>
+                <a href="#Forms_and_Input_Fields" class="nav-link">Forms and Input Fields</a>
+            </li>
+             <li>
+                <a href="#Semantic_Elements" class="nav-link">Semantic Elements</a>
+            </li>
+             <li>
+                <a href="#conclusion" class="nav-link">Conclusion</a>
+            </li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section id="introduction" class="main-section">
+            <header>Introduction</header>
+            <article>
+                <p>HTML, or HyperText Markup Language, is the fundamental building block of the web. It provides the basic structure for all web pages, which is then enhanced and styled with technologies like CSS (Cascading Style Sheets) and made interactive with JavaScript. Every element you see on a webpage — headings, paragraphs, images, links, forms — is defined and controlled by HTML.</p>
+                <p>Invented by Tim Berners-Lee in the early 1990s, HTML has evolved significantly. The latest version, HTML5, introduces powerful new elements and APIs, improving semantics, multimedia handling, and performance.</p>
+                <p>HTML uses a system of tags and attributes to describe content. These tags are enclosed in angle brackets, like <code>&lt;h1&gt;</code> for a heading or <code>&lt;img&gt;</code> for a link. Most elements have an opening tag, some content, and a closing tag, although a few are self-closing like <code>&lt;img&gt;</code>.</p>
+                <p>Though simple in syntax, HTML forms the structural skeleton of the modern web. A strong grasp of HTML is essential for anyone starting in web development, as it sets the stage for everything else — including styling, scripting, and responsive design.</p>
+                <p>In this documentation, you'll explore HTML’s core features, structure, and practical use through clear examples and explanations. Whether you're new to coding or brushing up on fundamentals, this guide will provide a solid foundation to build from.</p>
+                <h4>Highlights:</h4>
+                <ul>
+                    <li>HTML structures content for the web.</li>
+                    <li>Tags define content type and purpose.</li>
+                    <li>Works with CSS and JS for full site functionality.</li>
+                </ul>
+            </article>
+        </section>
+        <section id="basic_structure" class="main-section">
+            <header>Basic Structure</header>
+            <article>
+                <p>Every HTML document starts with the <code>&lt;!DOCTYPE html&gt;</code> declaration, followed by the <code>&lt;html&gt;</code> tag that wraps the whole page. Inside it, we use <code>&lt;head&gt;</code> for metadata and <code>&lt;body&gt;</code> for visible content.</p> 
+                <p>This structure ensures that web browsers can read and render the page correctly. Keeping this layout clean and valid is essential for SEO and accessibility.</p>
+                <h4>Main tags:</h4>
+                <ul>
+                    <li><code>&lt;!DOCTYPE html&gt;</code>: Declares HTML5</li>
+                    <li><code>&lt;html&gt;</code>: Root element</li>
+                    <li><code>&lt;head&gt;</code>: Metadata (title,links)</li>
+                    <li><code>&lt;body&gt;</code>: Visual content</li>
+                </ul>
+                <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;My First Page&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello, world!&lt;/h1&gt;
+    &lt;p&gt;This is my first HTML page.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+              </code></pre>
+            </article>
+        </section>
+        <section id="Headings_and_Paragraphs" class="main-section">
+            <header>Headings and Paragraphs</header>
+            <article>
+                <p>HTML offers six levels of headings (<code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>) used to organize content. <code>&lt;h1&gt;</code> represents the main title, and <code>&lt;h6&gt;</code> the smallest subheading. Using headings properly improves both structure and accessibility.</p>
+                <p>Paragraphs are written using the <code>&lt;p&gt;</code> tag. They wrap blocks of text, and browsers automatically add spacing to make text readable.</p>
+                <h4>Tips:</h4>
+                <ul>
+                    <li>Use only one <code>&lt;h1&gt;</code> per page.</li>
+                    <li>Don't skip heading levels (e.g., from h1 to h3).</li>
+                    <li>Wrap each thought in its own <code>&lt;p&gt;</code> tag.</li>
+                </ul>
+                <pre><code>&lt;h1&gt;Main Title&lt;/h1&gt;
+&lt;h2&gt;Subheading&lt;/h2&gt;
+&lt;p&gt;This is a paragraph explaining the topic.&lt;/p&gt;
+</code></pre>
+
+            </article>
+        </section>
+        <section id="Links_and_Anchor_Tags" class="main-section">
+            <header>Links and Anchor Tags</header>
+            <article>
+                <p>Links in HTML are created using the <code>&lt;a&gt;</code> (anchor) tag. They can connect to external websites, internal pages, email addresses, or files. The <code>herf</code> attribute defines the destination.</p>
+                <p>You can also use the <code>target="_blank"</code> attribute to open links in a new tab. For accessibility, include descriptive link text.</p>
+                <h4>Key attributes:</h4>
+                <ul>
+                    <li><code>herf</code>: Link destination</li>
+                    <li><code>target="_blank"</code>: Opens link in new tab</li>
+                    <li><code>title</code>: Tooltip on hover</li>
+                </ul>
+                <pre><code>&lt;a href=&quot;https://developer.mozilla.org&quot; target=&quot;_blank&quot; title=&quot;Visit MDN Docs&quot;&gt;Learn HTML on MDN&lt;/a&gt;
+                </code></pre>
+
+            </article>
+        </section>
+        <section id="Images" class="main-section">
+            <header>Images</header>
+            <article>
+                <p>To embed images, use the <code>&lt;img&gt;</code> tag. It's self-closing and requires <code>src</code> (source path) and <code>alt</code> (alternative text) attributes. Images enhance content, but accessibility and performance should be considered.</p>
+                <p>Use <code>width</code> and <code>height</code> to control image size, or better yet, use CSS. The <code>alt</code> text helps screen readers and improves SEO.</p>
+                <h4>Good practices:</h4>
+                <ul>
+                    <li>Always include <code>alt</code> text.</li>
+                    <li>Use descriptive filenames.</li>
+                    <li>Optimize image sizes for web.</li>
+                </ul>
+                <pre><code>&lt;img src=&quot;netaji.jpg&quot; alt=&quot;Portrait of Subhas Chandra Bose&quot; width=&quot;300&quot; loading=&quot;lazy&quot;&gt;
+                </code></pre>
+            </article>
+        </section>
+        <section id="Lists" class="main-section">
+            <header>Lists</header>
+            <article>
+                <p>HTML supports unordered lists (<code>&lt;ul&gt;</code>) for items without order and ordered lists (<code>&lt;ol&gt;</code>) for sequential items. Each item is placed inside a <code>&lt;li&gt;</code> tag.</p>
+                <p>Lists are useful for menus, feature highlights, steps, etc. They’re semantic and easy to style with CSS.</p>
+                <h4>List types:</h4>
+                <ul>
+                    <li><code>&lt;ul&gt;</code>: Bulleted list</li>
+                    <li><code>&lt;ol&gt;</code>: Numbered list</li>
+                    <li><code>&lt;li&gt;</code>: Individual list item</li>
+                </ul>
+                <pre><code>&lt;ul&gt;
+  &lt;li&gt;HTML&lt;/li&gt;
+  &lt;li&gt;CSS&lt;/li&gt;
+  &lt;li&gt;JavaScript&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Install VS Code&lt;/li&gt;
+  &lt;li&gt;Write HTML&lt;/li&gt;
+  &lt;li&gt;Save and run in browser&lt;/li&gt;
+&lt;/ol&gt;
+              </code></pre>
+
+            </article>
+        </section>
+        <section id="Elements_and_Attributes" class="main-section">
+            <header>Elements and Attributes</header>
+            <article>
+                <p>An element consists of a tag and its content. Many elements can take attributes to control behavior or appearance. Attributes go inside the opening tag and follow a <code>name="value"</code> format.</p>
+                <p>Attributes like <code>class</code>, <code>id</code>, <code>src</code>, and <code>herf</code> are extremely common and often used with JavaScript or CSS for styling or logic.</p>
+                <h4>Examples:</h4>
+                <ul>
+                    <li><code>class</code>: Applies CSS styles</li>
+                    <li><code>id</code>: Unique identifier</li>
+                    <li><code>title</code>: Tooltip on hover</li>
+                </ul>
+                <pre><code>&lt;p class=&quot;info&quot; id=&quot;main-text&quot; title=&quot;Hover text&quot;&gt;This is styled text.&lt;/p&gt;
+                </code></pre>
+            </article>
+        </section>
+        <section id="Divs_and_Spans" class="main-section">
+            <header>Divs and Spans</header>
+            <article>
+                <p>The <code>&lt;div&gt;</code> tag is a block-level container used for grouping elements. It has no semantic meaning but is often used for layout with CSS.</p>
+                <p>The <code>&lt;span&gt;</code> tag is an inline container used to style part of a line, such as coloring a single word inside a paragraph.</p>
+                <h4>Key Differences:</h4>
+                <ul>
+                    <li><code>&lt;div&gt;</code>: Block container, used for layout</li>
+                    <li><code>&lt;span&gt;</code>: Inline container, used for inline text styling</li>
+                </ul>
+                <pre><code>&lt;div class=&quot;box&quot;&gt;
+  &lt;p&gt;This is a block of content.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Click the &lt;span style=&quot;color: red;&quot;&gt;red text&lt;/span&gt; to continue.&lt;/p&gt;
+               </code></pre>
+            </article>
+        </section>
+        <section id="Forms_and_Input_Fields" class="main-section">
+            <header>Forms and Input Fields</header>
+            <article>
+                <p>Forms collect user input through fields like text boxes, checkboxes, and dropdowns. The <code>&lt;form&gt;</code> tag wraps inputs, and the <code>action</code> attribute defines where the data goes.</p>
+                <p>Each field uses the <code>&lt;input&gt;</code> tag with a <code>type</code> attribute. You can also label each field using the <code>&lt;label&gt;</code> tag for accessibility.</p>
+                <h4>Common input types:</h4>
+                <ul>
+                    <li><code>text</code>, <code>email</code>, <code>password</code></li>
+                    <li><code>checkbox</code>, <code>radio</code>, <code>submit</code></li>
+                </ul>
+                <pre><code>&lt;form action=&quot;/submit-form&quot;&gt;
+  &lt;label for=&quot;username&quot;&gt;Username:&lt;/label&gt;
+  &lt;input type=&quot;text&quot; id=&quot;username&quot; name=&quot;username&quot;&gt;
+  &lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt;
+&lt;/form&gt;
+               </code></pre>
+            </article>
+        </section>
+        <section id="Semantic_Elements" class="main-section">
+            <header>Semantic Elements</header>
+            <article>
+                <p>Semantic elements clearly describe their role in the structure of the page. This makes your code more readable and accessible to both humans and machines.</p>
+                <p>Tags like <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, and <code>&lt;footer&gt;</code> improve SEO and help screen readers better interpret the page layout.</p>
+                <h4>Common semantic tags:</h4>
+                <ul>
+                    <li><code>&lt;header&gt;</code>: Intro section or logo</li>
+                    <li><code>&lt;nav&gt;</code>: Navigation bar</li>
+                    <li><code>&lt;section&gt;</code>: A distinct content block</li>
+                    <li><code>&lt;footer&gt;</code>: Page bottom or contact info</li>
+                </ul>
+                <pre><code>&lt;header&gt;
+  &lt;h1&gt;My Blog&lt;/h1&gt;
+&lt;/header&gt;
+
+&lt;nav&gt;
+  &lt;a href=&quot;#intro&quot;&gt;Introduction&lt;/a&gt;
+  &lt;a href=&quot;#contact&quot;&gt;Contact&lt;/a&gt;
+&lt;/nav&gt;
+
+&lt;main&gt;
+  &lt;section&gt;
+    &lt;h2&gt;Article&lt;/h2&gt;
+    &lt;p&gt;This is a blog post.&lt;/p&gt;
+  &lt;/section&gt;
+&lt;/main&gt;
+
+&lt;footer&gt;
+  &lt;p&gt;&copy; 2025 MySite&lt;/p&gt;
+&lt;/footer&gt;
+                </code></pre>
+
+            </article>
+        </section>
+        <section id="conclusion" class="main-section">
+            <header>Conclusion</header>
+            <article>
+              <p>HTML is the starting point of any web project. While it may seem simple at first, understanding its full capabilities—including semantic structure, attributes, and accessibility—can make your websites much more powerful and professional.</p>  
+              <p>By learning HTML well, you lay a strong foundation for deeper topics like responsive design, JavaScript frameworks, and modern web development workflows. The more you practice, the more it becomes second nature.</p>
+              <h4>Key takeaways:</h4>
+              <ul>
+                <li>HTML is about structure, not style or behavior.</li>
+                <li>Clean, semantic code is better for users and machines.</li>
+                <li>Everything in web development builds on HTML.</li>
+              </ul>
+              <p class="source">All the documentation in this page is taken from <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">MDN Web Docs</a>.</p>
+               <footer>
+        <p class="foot">made with ❤️ by <a href="https://www.linkedin.com/in/saikat-das-698a5b2a2/" target="_blank">@saikat</a></p>
+    </footer>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
